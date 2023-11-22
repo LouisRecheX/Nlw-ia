@@ -25,6 +25,6 @@ export const download = (videoID) => new Promise((resolve, reject) => {
       )
       reject(error)
     })
-    .pipe(fs.createrWriteStream("./tmp/audio.mp4"))
+    .pipe(fs.createWriteStream("./tmp/audio.mp4"))
 })
 

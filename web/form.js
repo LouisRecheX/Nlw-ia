@@ -19,7 +19,7 @@ form.addEventListener("submit", async (event) => {
 
   content.textContent = "Obtendo o texto do áudio...";
 
-  const transcription = await server.get("/summary/" + videoID);
+  const transcription = await server.get("/summary" + videoID);
 
   content.textContent = "Realizando o resumo...";
 
